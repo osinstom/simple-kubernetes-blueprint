@@ -16,6 +16,10 @@ imports:
 
 inputs:
 
+  key_name:
+    description: Key name to be used for VMs
+    default: tpst
+
   image:
     description: Image to be used when launching agent VMs
     default: { get_secret: centos_core_image }
