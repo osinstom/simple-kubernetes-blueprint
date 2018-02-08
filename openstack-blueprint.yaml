@@ -74,6 +74,7 @@ node_templates:
             args:
               image: { get_input: image }
               flavor: { get_input: flavor }
+              key_name: { get_input: key_name }
               userdata: { get_attribute: [ cloudify_host_cloud_config, cloud_config ] }
     relationships:
       - target: kubernetes_master_port
