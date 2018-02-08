@@ -42,4 +42,4 @@ node_templates:
           - [ systemctl, start, kubelet ]
           - [ mkdir, '-p', /tmp/data ]
           - [ chcon, '-Rt', svirt_sandbox_file_t, /tmp/data ]
-          - [ chmod, 'a+rwtp', /tmp/data ]
+          #- [ chmod, 'a+rwtp', /tmp/data ]
