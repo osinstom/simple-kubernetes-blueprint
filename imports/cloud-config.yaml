@@ -12,6 +12,7 @@ node_templates:
             groups: docker
             shell: /bin/bash
             sudo: ['ALL=(ALL) NOPASSWD:ALL']
+            plain_text_passwd: 'test1234'
             ssh-authorized-keys:
               - { get_secret: agent_key_public }
         write_files:
